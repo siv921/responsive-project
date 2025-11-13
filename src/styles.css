@@ -2,12 +2,12 @@ body {
     font-family: "Poppins", sans-serif;
 }
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("../images/margate.jpg");
+    background-image: linear-gradient(rgba(39, 32, 68, 0.4), rgba(39, 32, 68, 0.6)), url("../images/margate.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     text-align: center;
-    padding: 240px 0;
+    padding: 200px 0;
 
 }
 
@@ -47,11 +47,56 @@ header a {
     margin-top: 32px;
 }
 .container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+footer {
+    color: white;
+    background-image: linear-gradient(rgba(39, 32, 68, 0.8), rgba(39, 32, 68, 0.8)), url("../images/sunset.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+section {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+footer h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5
+}
 
+footer a {
+    color: white;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.7
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    opacity: 0.7;
+    margin-right: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+}
 @media (max-width: 800px) {
     header {
         padding: 60px 0;
