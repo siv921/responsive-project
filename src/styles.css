@@ -91,10 +91,6 @@ main h2 {
     margin-top: 0;
 }
 
-main img {
-    max-width: 550px;
-}
-
 main p {
     font-size: 16px;
     line-height: 1.4;
@@ -209,5 +205,36 @@ footer p {
     }
     header h3 {
         font-size: 13px;
+    }
+    .two-column-grid, .three-column-grid, .footer-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+    section {
+        padding: 0;
+    }
+
+    .about {
+        padding-top: 10px;
+    }
+     .restaurant-cards-section, .photos-section {
+        padding-top: 25px;
+
+    }
+
+    main img {
+        display: none;
+    }
+
+    footer {
+        padding-top: 10px;
+        padding-bottom: 25px;
+    }
+
+    .cards img {
+        display: none;
+    }
+    .about img {
+        display: none;
     }
 }
