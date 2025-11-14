@@ -193,6 +193,7 @@ footer p {
     text-align: center;
     margin: 0 auto;
 }
+
 @media (max-width: 800px) {
     header {
         padding: 60px 0;
@@ -219,7 +220,7 @@ footer p {
     }
      .restaurant-cards-section, .photo-section {
         padding-top: 30px;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
     }
 
     main img {
