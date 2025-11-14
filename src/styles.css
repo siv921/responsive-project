@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #272044;
+    --secondary-color: white;
+}
+
 body {
     font-family: "Poppins", sans-serif;
 }
@@ -5,7 +10,7 @@ header {
     background-image: linear-gradient(rgba(39, 32, 68, 0.4), rgba(39, 32, 68, 0.6)), url("../images/margate.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: var(--secondary-color);
     text-align: center;
     padding: 200px 0;
 
@@ -41,11 +46,16 @@ header a {
     line-height: 1.5;
     letter-spacing: 3px;
     text-decoration: none;
-    color: #272044;
-    background: white;
+    color: var(--primary-color);
+    background: var(--secondary-color);
     padding: 16px 32px;
     display: inline-block;
     margin-top: 32px;
+    transition: all 100ms ease-in-out;
+}
+
+header a:hover {
+    text-decoration: underline;
 }
 .container {
     max-width: 1400px;
@@ -53,16 +63,45 @@ header a {
 }
 
 footer {
-    color: white;
+    color: var(--secondary-color);
     background-image: linear-gradient(rgba(39, 32, 68, 0.8), rgba(39, 32, 68, 0.8)), url("../images/sunset.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 80px;
+    opacity: 0.9;
 }
 section {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 100px;
 }
+
+main h3 {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    opacity: 0.3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 0;
+}
+
+main h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    color: #272044;
+    margin-top: 0;
+}
+
+main img {
+    max-width: 550px;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--primary-color);
+    opacity: 0.5;
+}  
 
 footer h3 {
     font-weight: 700;
@@ -71,7 +110,7 @@ footer h3 {
 }
 
 footer a {
-    color: white;
+    color: var(--secondary-color);
     line-height: 1.5;
     font-weight: 400;
     font-size: 14px;
@@ -93,48 +132,62 @@ footer p {
     opacity: 0.7;
 }
 
-main img {
-    width: 100%;
-    height: auto;
-    max-width: 550px;
-
-}
-.grid {
-    display: grid;
+.footer-grid {
     grid-template-columns: 1fr 2fr 2fr;
     grid-gap: 45px;
 }
 
-.main-grid {
+.grid {
     display: grid;
+}
+
+.about-margate-grid {
     grid-template-columns: 1fr 1fr;
-    margin: 80px auto;
+    grid-gap: 35px;
+
 }
 
-main h3 {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #272044;
-    opacity: 0.3;
+.restaurant-cards-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+      
+
+.restaurant-cards-section {
+    background-color:#F8F8F8;
+    text-align: center;
+}
+
+.cards {
+    background-color: var(--secondary-color);
+}
+
+.card-body {
+    padding: 25px;
+}
+.cards h2 {
+    font-size: 30px;
+}
+
+.cards a {
+    background-color: #462CB2;
+    color: var(--secondary-color);
+    padding: 13px 63px;
+    text-decoration: none;
+    margin-top: 24px;
+    display: inline-block;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-top: 0;
+    font-weight: 500;
+    letter-spacing: 1.02px;
+    font-size: 15px;
 }
 
-main h2 {
-    font-size: 40px;
-    line-height: 1.2;
-    color: #272044;
-    margin-top: 0;
+.img-responsive {
+     width: 100%;
+    height: auto;
+    display: block;
 }
 
-main p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #272044;
-    opacity: 0.5;
-
-}
 @media (max-width: 800px) {
     header {
         padding: 60px 0;
