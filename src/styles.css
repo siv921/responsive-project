@@ -13,7 +13,6 @@ header {
     color: var(--secondary-color);
     text-align: center;
     padding: 200px 0;
-
 }
 
 h1 {
@@ -146,13 +145,15 @@ footer p {
     grid-gap: 35px;
 
 }
+.two-column-grid {
+    grid-template-columns: 1fr 1fr;
+}
 
-.restaurant-cards-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
+.three-column-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
 }
       
-
 .restaurant-cards-section {
     background-color:#F8F8F8;
     text-align: center;
@@ -183,11 +184,19 @@ footer p {
 }
 
 .img-responsive {
-     width: 100%;
-    height: auto;
+    width: 100%;
     display: block;
 }
 
+.embed {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.photo-section {
+    text-align: center;
+    margin: 0 auto;
+}
 @media (max-width: 800px) {
     header {
         padding: 60px 0;
