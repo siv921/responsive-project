@@ -71,7 +71,7 @@ footer {
 section {
     max-width: 100%;
     margin: 0 auto;
-    padding: 100px;
+    padding: 80px;
 }
 
 main h3 {
@@ -208,18 +208,18 @@ footer p {
     }
     .two-column-grid, .three-column-grid, .footer-grid {
         grid-template-columns: 1fr;
-        grid-gap: 0;
     }
     section {
         padding: 0;
     }
 
     .about {
-        padding-top: 10px;
+        padding-bottom: 15px;
+        
     }
-     .restaurant-cards-section, .photos-section {
-        padding-top: 25px;
-
+     .restaurant-cards-section, .photo-section {
+        padding-top: 30px;
+        margin-bottom: 35px;
     }
 
     main img {
