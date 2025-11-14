@@ -237,4 +237,7 @@ footer p {
     .about img {
         display: none;
     }
+    .embed {
+        aspect-ratio: 16/9;
+    }
 }
